@@ -1,0 +1,39 @@
+{
+  "name": "graph-analysis-app",
+  "version": "1.0.0",
+  "description": "Interactive Graph Plotting, Gradient Calculation and Line/Curve of Best Fit App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win"
+  },
+  "keywords": [
+    "graph",
+    "regression",
+    "math",
+    "electron"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.0",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "com.graph.analysis",
+    "productName": "Graph Analysis App",
+    "win": {
+      "target": "portable"
+    },
+    "files": [
+      "main.js",
+      "index.html",
+      "styles.css",
+      "app.js"
+    ],
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
