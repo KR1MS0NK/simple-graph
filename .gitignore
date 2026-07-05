@@ -1,0 +1,13 @@
+# Node.js dependencies
+node_modules/
+
+# Electron-builder / packager output directories to ignore
+dist/win-unpacked/
+dist/*.zip
+*.zip
+
+# Temp files and logs
+pack.log
+asar-temp/
+.DS_Store
+*.log
